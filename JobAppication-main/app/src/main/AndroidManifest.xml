@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/odd"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JobApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".ViewMessages"
+            android:exported="false" />
+        <activity
+            android:name=".Chats"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerCare"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationDetails"
+            android:exported="false" />
+        <activity
+            android:name=".NotifyDialog"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicantsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Applicants"
+            android:exported="false" />
+        <activity
+            android:name=".RemoveJobDetails"
+            android:exported="false" />
+        <activity
+            android:name=".PostedJobDetails"
+            android:exported="false" />
+        <activity
+            android:name=".SavedJobsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".RemoveJob"
+            android:exported="false" />
+        <activity
+            android:name=".AppliedJobDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyAvailableJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobSeekerSavedJobsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermsandConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FAQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AvailableJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostedJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppliedJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobSeekerSavedJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobSeekerNotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobSeekerJobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyJobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavedJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostJobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecruiterProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobSeekerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecruiterDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobSeekerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

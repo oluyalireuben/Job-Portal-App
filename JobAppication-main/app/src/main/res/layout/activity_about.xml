@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+  <LinearLayout
+      android:id="@+id/LL_titleBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp"
+      android:background="@color/button"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/IV_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:src="@drawable/ic_backarrow"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="About"
+        android:paddingLeft="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+  </LinearLayout>
+
+  <ScrollView
+      android:id="@+id/scrollView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/LL_titleBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="About Recruitment Android Application"
+          android:textColor="@color/bluehead"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:text="Recruitment Android Application is one of the most innovative and huge online job portal in Kenya. Developed by Zephaniah Nguran in 2024, with the aim of helping the jobseekers secure jobs easily, hence aiding recruitment industry."
+          android:textColor="@color/black"
+          android:textSize="20sp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="          Recruitment Android Application connects jobseekers and recruiters by accurately matching candidate profiles to the relevant job openings through an advanced 2-way matching technology. While most job portals only focus on getting candidates the next job, it also focuses on the entire career growth of candidates. "
+          android:textColor="@color/black"
+          android:textSize="20sp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="          As the industry shifts towards mobile, Recruitment Android Application will be one of the leading the transition and is the fastest growing job portal on mobile devices, witnessing a 100% YOY growth in mobile traffic and also offers on-the-go jobs through the Recruitment Android Application. "
+          android:textColor="@color/black"
+          android:textSize="20sp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="          Recruitment Android Application works closely to bridge the gap between talent and opportunities and offers end-to-end recruitment solutions.  Recruitment Android Application brings candidates and top employers under one roof. "
+          android:textColor="@color/black"
+          android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/IV_developer"
+          android:layout_width="200dp"
+          android:layout_height="200dp"
+          android:layout_marginTop="10dp"
+          android:src="@drawable/developer"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:paddingStart="20dp"
+          android:textStyle="bold"
+          android:text=" Zephaniah  Nguran\n\n Kabarak University\n\n BSc. IT\n\n 0796289093\n\n zeregae@kabarak.ac.ke"
+          android:textColor="@color/black"
+          android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+  </ScrollView>
+
+</RelativeLayout>

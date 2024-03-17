@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/divider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotifyDialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_bg3"
+        android:layout_marginStart="20dp">
+
+    <ImageView
+        android:id="@+id/IV_bell"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/notification" />
+
+    <LinearLayout
+        android:id="@+id/LL_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IV_bell"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TV_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Thank You for this App!"
+            android:textSize="@dimen/label"
+            android:textColor="@color/bluehead"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TV_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Your application has been received. You'll be notified with further information."
+            android:textColor="@color/black"
+            android:textSize="@dimen/label"/>
+
+        <TextView
+            android:id="@+id/TV_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="8dp"
+            android:text="Okay"
+            android:textSize="@dimen/label"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/ok_button"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

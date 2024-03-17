@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".ViewJobsActivity">
+
+    <View
+        android:id="@+id/splitLine"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/button" />
+
+    <RelativeLayout
+        android:id="@+id/RL_JobDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/splitLine"
+        android:padding="3dp"
+        android:paddingTop="5dp"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/jobsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:padding="10sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

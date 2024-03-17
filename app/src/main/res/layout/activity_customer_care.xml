@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/divider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerCare">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_bg3"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:id="@+id/IV_bell"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/notification" />
+
+        <LinearLayout
+            android:id="@+id/LL_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IV_bell"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TV_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Do you need Assistance!"
+                android:textSize="@dimen/label"
+                android:textColor="@color/bluehead"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/TV_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Reach the  Recruitment Android Application Team through:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/label"/>
+
+            <TextView
+                android:id="@+id/TV_phonelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="Call"
+                android:textSize="@dimen/label"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:elevation="5dp"/>
+
+            <TextView
+                android:id="@+id/TV_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:padding="8dp"
+                android:text="0796289093"
+                android:textSize="@dimen/label"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/ok_button"
+                android:elevation="5dp"/>
+
+            <TextView
+                android:id="@+id/TV_emaillabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="Email"
+                android:textSize="@dimen/label"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:elevation="5dp"/>
+
+            <TextView
+                android:id="@+id/TV_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:padding="8dp"
+                android:text="zephzephan073@gmail.com"
+                android:textSize="@dimen/label"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/ok_button"
+                android:elevation="5dp"/>
+
+            <TextView
+                android:id="@+id/TV_heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="We are ready to help you!"
+                android:textSize="@dimen/label"
+                android:textColor="@color/bluehead"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

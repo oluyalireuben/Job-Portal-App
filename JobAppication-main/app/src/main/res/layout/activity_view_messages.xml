@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/divider"
+    android:layout_height="match_parent"
+    tools:context=".ViewMessages">
+
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:layout_marginHorizontal="10dp"
+        android:text="Chat Here"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chat">
+
+        <TextView
+            android:id="@+id/chattingWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginHorizontal="10dp"
+            android:drawableStart="@drawable/ic_baseline_person_23"
+            android:drawablePadding="20dp"
+            android:text="My friend"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messagesRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@id/typeMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+    <EditText
+        android:id="@+id/typeMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg"
+        android:maxHeight="100dp"
+        android:minHeight="40dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/send"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="63dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="20dp"
+        android:drawableStart="@drawable/baseline_send_24"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/typeMessage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

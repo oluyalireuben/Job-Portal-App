@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    tools:context=".ApplicantsDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/LL_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/IV_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_backarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:text="Applicant Details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/jobtitle"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LL_titleBar">
+
+            <RelativeLayout
+                android:id="@+id/RL_Parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/RL_JobDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_bg"
+                    android:elevation="3dp"
+                    android:padding="3dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/TV_Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="Applicants Details"
+                        android:textColor="@color/bluehead"
+                        android:textSize="@dimen/jobDetailLabel"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/splitLine0"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@+id/TV_Label"
+                        android:background="@color/orange" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/splitLine0"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:hint="Applicant Name"
+                        android:padding="10dp"
+                        android:textColor="@color/darkgrey"
+                        android:textColorHint="@color/lightgrey"
+                        android:textSize="@dimen/headlabel"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvjobTiltle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/tvName"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:hint="Job Title"
+                        android:padding="10dp"
+                        android:textColor="@color/darkgrey"
+                        android:textColorHint="@color/lightgrey"
+                        android:textSize="@dimen/headlabel"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvcompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/tvjobTiltle"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:hint="Company Name"
+                        android:padding="10dp"
+                        android:textColor="@color/darkgrey"
+                        android:textColorHint="@color/lightgrey"
+                        android:textSize="@dimen/headlabel"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/tvcompanyName"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:hint="Location"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="@color/darkgrey"
+                        android:textColorHint="@color/lightgrey"
+                        android:textSize="@dimen/headlabel"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/tvlocation"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:hint="Link"
+                        android:padding="10dp"
+                        android:textColor="@color/darkgrey"
+                        android:textColorHint="@color/lightgrey"
+                        android:textSize="@dimen/headlabel"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAward"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/tvLink"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:ems="10"
+                        android:hint="Award"
+                        android:padding="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/darkgrey"
+                        android:textColorHint="@color/lightgrey"
+                        android:textSize="@dimen/headlabel"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_shortlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/RL_JobDetails"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/TV_updateprofjs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Shortlist"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressbarjsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_care"
+            android:iconTint="@color/divider"
+            android:icon="@drawable/baseline_call_24"
+            android:title="Customer Care" />
+
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_faqs"
+            android:title="FAQs" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/chat"
+            android:title="CHAT" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_terms"
+            android:title="Terms and Conditions" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+
+    </group>
+
+</menu>
