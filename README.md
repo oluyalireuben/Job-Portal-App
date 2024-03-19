@@ -29,4 +29,4 @@ To contribute to the Recruitment Android Application project, follow these steps
 8. Create a pull request to merge your changes into the main repository.
 
 ## Contributors
-- Developer Reuben Oluyali (https//github.com/Oluyalireuben)
+- Developer Reuben Oluyali (https://github.com/Oluyalireuben)
