@@ -28,7 +28,5 @@ To contribute to the Recruitment Android Application project, follow these steps
 7. Push your changes to your forked repository.
 8. Create a pull request to merge your changes into the main repository.
 
-## Contributors
+## App
 
-- [Dev Reuben Oluyali](https://github.com/Oluyalireuben)
-- [Dev Zephaniah Nguran](https://github.com/Zeph073)
